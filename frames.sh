@@ -60,7 +60,7 @@ plot_deformation() {
     echo "0 0 ${4}" | gmt text -D0c/-0.9c -F+f8p,Times-Roman+jTC
 }
 
-gmt begin figure02 png
+gmt begin Doc/figure02 png
     # Top row
     gmt subplot begin 1x2 -Fs7/7 -R-7/7/-7/7 -Jx1/1 -B+n -M-0.5
         gmt subplot set 0,0
@@ -81,4 +81,4 @@ gmt begin figure02 png
 
     # Clean up
     rm -f quiver_* deformation_*
-gmt end show
+gmt end
